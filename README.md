@@ -11,14 +11,19 @@ git branch -u upstream/Matrix Matrix
 ### Create a new dev branch but update to latest upstream first
 `
 git checkout Matrix
+
 git pull
+
 git checkout -b my-dev-branch
 `
 ### Rebase dev branch to latest version from upstream
 `
 git checkout Matrix
+
 git pull
+
 git checkout my-dev-branch
+
 git rebase Matrix
 `
 ### Push dev branch to your fork
@@ -33,6 +38,7 @@ git push origin -ff my-dev-branch
 
 `
 git add -u
+
 git commit —amend
 `
 ### Then force push it with:
